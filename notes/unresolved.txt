@@ -1,0 +1,45 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+RankFunc | pelookout.so
+ScreenIsTouched() | pelookout.so
+QueFlush(bool) | pelookout.so
+VideoClass::Line(int, int, int, int) | pelookout.so
+VideoClass::GetPixel(int, int) | pelookout.so
+VideoClass::SetPixel(unsigned short, unsigned short, int, int, int) | pelookout.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | pelookout.so
+xml_gamerandom::PICRAND_record::PICRAND_record() | pelookout.so
+xml_gamerandom::PICRAND_record::~PICRAND_record() | pelookout.so
+xml_gamerandom::PICRAND_record::operator=(xml_gamerandom::PICRAND_record const&) | pelookout.so
+RandomizedArrayClass::SetBookMark(unsigned char) | pelookout.so
+RandomizedArrayClass::GetNextValue(int) | pelookout.so
+RandomizedArrayClass::GotoBookMark(unsigned char) | pelookout.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | pelookout.so
+RandomizedArrayClass::~RandomizedArrayClass() | pelookout.so
+USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | pelookout.so
+USBIO::JoystickFound() | pelookout.so
+Bitmap::CopyFromScreen(int, int, bool) | pelookout.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | pelookout.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | pelookout.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | pelookout.so
+Settings::Init() | libcontent.so
+Settings::Init() | pelookout.so
+Settings::Load() | libcontent.so
+Settings::Load() | pelookout.so
+Settings::Cleanup() | libcontent.so
+Settings::Cleanup() | pelookout.so
+Settings::Restore(abstract_xml_record const*) | libcontent.so
+Settings::Restore(abstract_xml_record const*) | pelookout.so
+Settings::SaveNow() | libcontent.so
+Settings::Settings(char const*, unsigned int) | libcontent.so
+Settings::Settings(char const*, unsigned int) | pelookout.so
+Settings::~Settings() | libcontent.so
+Settings::~Settings() | pelookout.so
+xml_gamerandom::PICRAND_record::operator!=(xml_gamerandom::PICRAND_record const&) const | pelookout.so
+Settings::Key(unsigned int, bool) const | libcontent.so
+Settings::Key(unsigned int, bool) const | pelookout.so
+typeinfo for Settings | libcontent.so
+typeinfo for Settings | pelookout.so
+typeinfo for xml_gamerandom::PICRAND_record | pelookout.so
