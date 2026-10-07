@@ -5,5 +5,3 @@
 VideoClass::Line(int, int, int, int) | pelookout.so
 VideoClass::GetPixel(int, int) | pelookout.so
 VideoClass::SetPixel(unsigned short, unsigned short, int, int, int) | pelookout.so
-USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | pelookout.so
-USBIO::JoystickFound() | pelookout.so
